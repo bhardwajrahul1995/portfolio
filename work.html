@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Portfolio</title>
+		
+		<style type="text/css">
+					
+			body {
+				font-family: Calibri, sans-serif;
+				
+				font-size: 20px;
+				letter-spacing: 3px;
+				color: white;
+				
+			}
+			
+		
+			
+			.container {
+				overflow: hidden;
+				background-color: #000000;
+				font-family: Arial;
+						}
+
+			.container a {
+				float: right;
+				font-size: 16px;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				 border: 1px solid white;
+						}
+		
+			.container img {
+				width: 50px;
+				height: 50px;
+							}
+					
+			.container a:hover 
+			{
+				background-color: #808080;
+			}
+			
+			.wstrip {
+				overflow: hidden;
+				background-color: white;
+			       }
+			.wstrip p {	   
+				text-align: center;
+				font-size: 2px;
+				color: white;
+					 }
+				
+			.footer {
+				height: 50px;
+				width: 100%;
+				background-color: #000000;
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+				text-decoration: none;
+				position: fixed;
+					}
+			.footer p {
+				text-align: center;
+				font-size: 16px;
+				color: white;	
+				word-spacing: 30px;
+					  }
+			.footer img {
+				position: fixed;
+				width: 50px;
+				height: 50px;
+							}
+			.footer a {
+				color: white;
+				}		
+				
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.row > .column {
+  padding: 0 5px;
+  margin-left: 5cm;
+  margin-bottom: 1cm;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+} 
+.column {
+  float: left;
+  width: 15%;
+  border-style: solid;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  
+}
+
+.modal-content {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  width: 30%;
+  max-width: 1200px;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}	
+
+.videoplace {
+  float: left;
+  margin-left: 4cm;
+  margin-bottom: 1cm;
+  overflow= scroll;
+}			
+	
+
+		</style>
+		
+		
+	</head>
+	<body bgcolor="black">
+		
+		
+		<div class="container">
+			<a href="about.html">About</a>
+			<a href="work.html">Work</a>
+			<a href="index.html">Home</a>
+			<img src="logo.gif"/>
+			</div>
+		
+		<div class="wstrip">
+		<p> this is strip </P>
+		</div>
+	
+		<div class="footer">
+			<img src="logo.gif"/>
+			<p>2017-2018 Contact: <a href="bhardwaj.rahul1995@gmail.com">brothers@gmail.com</a>.</p>
+			</div>	
+
+		<h2 style="text-align:center">graphic design & illustration</h2>
+
+<div class="row">
+  <div class="column">
+    <img src="abspxce (1).jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="abspxce (2).jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="abspxce (3).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="abspxce (4).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="abspxce (5).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="abspxce (6).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="abspxce (7).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="abspxce (8).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="abspxce (9).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="abspxce (10).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="abspxce (11).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="abspxce (12).jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="abspxce (1).jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="abspxce (2).jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="abspxce (3).jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="abspxce (4).jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="abspxce (5).jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="abspxce (6).jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="abspxce (7).jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="abspxce (8).jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="abspxce (9).jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="abspxce (10).jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="abspxce (11).jpg" style="width:100%">
+    </div>
+	
+	<div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="abspxce (12).jpg" style="width:100%">
+    </div>
+	
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="abspxce (1).jpg" style="width:100%" onclick="currentSlide(1)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="abspxce (2).jpg" style="width:100%" onclick="currentSlide(3)" >
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="abspxce (3).jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="abspxce (4).jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="abspxce (5).jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="abspxce (6).jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="abspxce (7).jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="abspxce (8).jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="abspxce (9).jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="abspxce (10).jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="abspxce (11).jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+	 <div class="column">
+      <img class="demo cursor" src="abspxce (12).jpg" style="width:100%" onclick="currentSlide(4)" >
+    </div>
+  </div>
+</div>
+
+<script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<br/>	
+<hr>
+<br/>
+<h2 style="text-align:center">processing</h2>
+
+  <div class="videoplace">
+<iframe src="https://player.vimeo.com/video/197290284" width="420" height="315" frameborder="1" ></iframe>
+</div>
+ <div class="videoplace">
+ <iframe src="https://player.vimeo.com/video/197213346" width="420" height="315" frameborder="1" ></iframe>
+ </div> 
+<div class="videoplace">
+ <iframe src="https://player.vimeo.com/video/197219453" width="420" height="315" frameborder="1"></iframe>
+ </div>
+ <div class="videoplace">
+<iframe src="https://player.vimeo.com/video/197299195" width="420" height="315" frameborder="1"></iframe>
+ </div>
+	</body>
+</html>

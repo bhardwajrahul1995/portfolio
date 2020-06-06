@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Portfolio</title>
+		
+		<style type="text/css">
+		
+					
+			body {
+				font-family: Calibri, sans-serif;
+				
+				font-size: 20px;
+				letter-spacing: 3px;
+				color: white;
+				
+			}
+			.background-wrap {
+				position: fixed;
+				z-index: -1000;
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				top: 0;
+				left: 0;
+			}
+			
+			#video-bg-elem {
+				position: absolute;
+				top: 0;
+				left: 0;
+				min-height: 100%;
+				min-width: 100%;
+			}
+			.content {
+				position: absolute; 
+				left: 35%;
+				bottom: 30%;
+				width: 25%;
+				min-height: 20%;
+				z-index: 1000;
+				background-color: rgba(0,0,0,0.7);
+				text-align: center;
+			}
+			.content h1 {
+				text-align: center;
+				font-size: 60px;
+				text-transform: uppercase;
+				font-weight: 300;
+				color: white;
+				padding-top: 15%;
+				margin-bottom: 10px;
+				
+			}
+			.content p {
+				text-align: center;
+				font-size: 20px;
+				letter-spacing: 3px;
+				color: white;
+				
+			}
+			
+			.container {
+				overflow: hidden;
+				background-color: #000000;
+				font-family: Arial;
+						}
+
+			.container a {
+				float: right;
+				font-size: 16px;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+				 border: 1px solid white;
+						}
+		
+			.container img {
+				width: 50px;
+				height: 50px;
+							}
+					
+			.container a:hover 
+			{
+				background-color: #808080;
+			}
+			
+			.wstrip {
+				overflow: hidden;
+				background-color: white;
+			       }
+			.wstrip p {	   
+				text-align: center;
+				font-size: 2px;
+				color: white;
+					 }
+				
+			.footer {
+				height: 50px;
+				width: 100%;
+				background-color: #000000;
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+				text-decoration: none;
+				position: fixed;
+					}
+			.footer p {
+				text-align: center;
+				font-size: 16px;
+				color: white;	
+				word-spacing: 30px;
+					  }
+			.footer img {
+				position: fixed;
+				width: 50px;
+				height: 50px;
+							}
+			.footer a {
+				color: white;
+				}		
+							
+							
+							
+		</style>
+		
+		
+	</head>
+	<body>
+		
+		
+		
+
+		<div class="background-wrap">
+			<video id="video-bg-elem" autoplay="true" loop="loop" > 
+				<source src="cubefield.mp4" type="video/mp4">
+				Video not supported
+			</video>          
+		</div>
+
+		
+		<div class="content">        
+		
+			<script type="text/javascript">
+			var nam = prompt("Enter your name", " ");
+		document.write("<h1>Hello!</h1>" + nam + "<br /><p>This is my creative space.</p>" );
+			
+			</script>
+		</div>
+		
+		
+		<div class="container">
+			<a href="about.html">About</a>
+			<a href="work.html">Work</a>
+			<a href="index.html">Home</a>
+			<img src="logo.gif"/>
+			</div>
+		
+		<div class="wstrip">
+		<p> this is strip </P>
+		</div>
+	
+		<div class="footer">
+			<img src="logo.gif"/>
+			<p>2017-2018 Contact: <a href="bhardwaj.rahul1995@gmail.com">brothers@gmail.com</a>.</p>
+			
+	</div>
+
+	</body>
+</html>
